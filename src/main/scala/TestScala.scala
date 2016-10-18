@@ -7,10 +7,16 @@ object TestScala {
 
   def main(args: Array[String]) {
     println("max====" + max(3, 7))
-    println(num(100));
-    println(num2(100));
+    println(num(100))
+    println(num2(100))
   }
 
+  /**
+    * 求最大值
+    * @param x
+    * @param y
+    * @return
+    */
   def max(x: Int, y: Int): Int = {
     if (x > y) {
       x
@@ -26,11 +32,11 @@ object TestScala {
     * @return
     */
   def num(n:Int): Int ={
-    var sum =0;
+    var sum =0
     for(i <-1 until n){
-      sum=sum+i;
+      sum=sum+i
     }
-    return sum;
+     sum
   }
 
   /**
@@ -39,11 +45,11 @@ object TestScala {
     * @return
     */
   def num2(n:Int): Int ={
-    var sum =0;
+    var sum =0
     for(i <-1 to n){
-      sum=sum+i;
+      sum=sum+i
     }
-    return sum;
+     sum
   }
 }
 
